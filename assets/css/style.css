@@ -141,6 +141,7 @@ main section{
 }
 .bio{
   margin-left: 2rem;
+  padding: 3rem;
 }
 .bio p{
   background-color: rgb(224, 224, 224);
@@ -148,10 +149,10 @@ main section{
   text-indent: 25px;
 }
 .bio article{
-  position: relative;
+  /* position: relative;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
-  left: 50%;
+  left: 50%; */
 }
 
 /******************************************
@@ -188,16 +189,60 @@ main section{
 
 /* about me */
 #aboutMe{
-  height: 60rem;
-}
-#aboutMe article{
-  
+  height: auto;
 }
 #mathias{
   width: 30%;
   background-image: url(/assets/images/MathiasSmall.png);
   background-size: cover;
+  background-position: center;
 }
+@media screen and (max-width: 1365px) {
+  #aboutMe{
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1143px) {
+  #aboutMe{
+    font-size: 1.4rem;
+    width: 60%;
+    margin-left: .5rem;
+  }
+  #mathias{
+    width: 35%;
+    margin-right: .5rem;
+  }
+}
+@media screen and (max-width: 857px) {
+  #mathias{
+    background-size:cover;
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 701px) {
+  #mathias,
+  #aboutMe{
+    margin: 0 auto .5rem auto;
+    width: 75%;
+  }
+  #mathias{
+    background-position: top;
+    background-size: cover;
+  }
+
+}
+@media screen and (max-width: 455px) {
+  #aboutMe,
+  #mathias{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 351px) {
+  #mathias{
+    background-size: cover;
+  }
+}
+
 
 /* triple threat lures */
 
