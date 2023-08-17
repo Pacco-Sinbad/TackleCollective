@@ -41,7 +41,19 @@ body {
   margin-right: 15%;
   border-radius: 1rem;
 }
-.button a{
+.buttonAlt{ 
+  height: 10rem;
+  width: 20rem;
+  background-color: rgb(224, 224, 224);
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  margin-right: 15%; */
+  border-radius: 1rem;
+}
+.button a,
+.buttonAlt a{
   display: block;
   position: relative;
   top: 50%;
@@ -50,13 +62,16 @@ body {
   padding: 1rem;
 }
 
+
 a{
   text-decoration: none;
   color: black;
   font-family: 'Charm', cursive;
 }
 
-
+.hide{
+  visibility: hidden;
+}
 /******************************************
 /* HEADER
 /*******************************************/
@@ -99,7 +114,8 @@ header h4{
 main{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+
   flex-direction: row;
   margin: 5rem auto;
 }
@@ -113,7 +129,7 @@ main section{
   border-radius: 1rem;
 }
 .creator{
-  background-image: url(/assets/images/SalmonLuresToTopNoBackground.png);
+  background-image: url(/assets/images/Mathias.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -125,10 +141,45 @@ main section{
 .bio p{
   background-color: rgb(224, 224, 224);
   border-radius: 1rem;
+  text-indent: 25px;
 }
 .bio article{
   position: relative;
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
   left: 50%;
+}
+
+/******************************************
+/* MAIN FOR ARCHIVE PAGE
+/*******************************************/
+
+.archives{
+  margin: 3rem auto;
+}
+
+.archives nav{
+  width: 88%;
+  margin: 0 auto;
+}
+
+.archives ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  
+}
+.archives li{
+  margin: 2rem;
+}
+
+/******************************************
+/* EACH PAGES SPECIFIC ALTERATIONS
+/*******************************************/
+
+/* about me */
+#aboutMe{
+  height: 70rem;
 }
