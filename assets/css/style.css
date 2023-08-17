@@ -70,6 +70,11 @@ a{
 }
 
 .hide{
+  display: none;
+  visibility: hidden;
+}
+.hidePerm{
+  display: none;
   visibility: hidden;
 }
 /******************************************
@@ -80,7 +85,7 @@ header {
   font-size: 11rem;
   text-align: center;
   width: 60%;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 5px 1rem 5px;
   margin: 2rem auto 0 auto;
   background-color: rgba(0, 0, 0, 0.891);
   border-radius: 1rem;
@@ -115,7 +120,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   flex-direction: row;
   margin: 5rem auto;
 }
@@ -199,4 +203,130 @@ main section{
 
 #triple{
   background-image: url(/assets/images/SalmonLuresToTopNoBackground.png);
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
+
+
+/* header */
+@media screen and (max-width: 1580px){
+  header h1{
+    font-size: 7rem;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  header h1{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 858px){
+  header{
+    padding: 2rem;
+  }
+  header h1{
+    font-size: 4rem;
+  }
+}
+
+@media  screen and (max-width: 628px) {
+  header h1{
+    font-size: 3rem;
+  }
+  header h3,
+  header h4{
+    font-size: 1.4rem;
+  }
+  .button{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 488px){
+  header{
+    width: 85%;
+  }
+  .topBar{
+    flex-wrap: wrap;
+  }
+  .topBar nav{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button{
+    height: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-50%) translateX(0%);
+    left: 0%;
+  }
+  .hide{
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 386px) {
+  .button{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  header h1{
+    font-size: 2rem;
+  }
+  header{
+    padding: 10px;
+  }
+  header h3,
+  header h4{
+    font-size: 1.2rem;
+  }
+  .topBar nav{
+    margin-top: .5rem;
+  }
+  #archHead{
+    margin-top: .5rem;
+  }
+}
+
+/* Main */
+
+
+@media screen and (max-width: 700px){
+  main{
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+  }
+
+  main .creator,
+  main .bio{
+    margin:1rem auto;
+    height: 40rem;
+    width: 80%;
+  }
+}
+
+/* Archives */
+@media screen and (max-width: 488px) {
+  .archives li{
+    margin: .7rem;
+  }
+  .buttonAlt{
+    height: 5rem;
+    
+  }
+}
+@media screen and (max-width: 340px) {
+  .archives{
+    margin: 1rem;
+  }
 }
