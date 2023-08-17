@@ -129,7 +129,7 @@ main section{
   border-radius: 1rem;
 }
 .creator{
-  background-image: url(/assets/images/Mathias.png);
+  background-image: url(https://images.pexels.com/photos/190294/pexels-photo-190294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -182,4 +182,13 @@ main section{
 /* about me */
 #aboutMe{
   height: 70rem;
+}
+#mathias{
+  background-image: url(/assets/images/Mathias.png);
+}
+
+/* triple threat lures */
+
+#triple{
+  background-image: url(/assets/images/SalmonLuresToTopNoBackground.png);
 }
