@@ -27,7 +27,7 @@ body {
   background-image: url(/assets/images/fishingBackground.png);
   background-size: 12%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .button{
@@ -120,9 +120,9 @@ main{
   margin: 5rem auto;
 }
 main section{
-  width: 35%;
+  width: 45%;
   height: 60rem;
-  text-align: center;
+  text-align: left;
   background-color: rgba(224, 224, 224, 0.93);
   box-shadow: 0px 5px 200px 1px rgb(0, 0, 0);
   padding: 1rem;
@@ -181,9 +181,13 @@ main section{
 
 /* about me */
 #aboutMe{
-  height: 70rem;
+  height: 60rem;
+}
+#aboutMe article{
+  
 }
 #mathias{
+  width: 30%;
   background-image: url(/assets/images/Mathias.png);
 }
 
