@@ -29,6 +29,9 @@ Images for all of the articles tied to their id
   width: auto;
   padding: 0;
 }
+#octoberNineteenth2023{
+  background-image: url(/assets/images/oct192023.png);
+}
 #octoberTwelvth2023{
   background-image: url(/assets/images/oct122023.png);
 }
@@ -145,6 +148,10 @@ header h4{
   margin: 2rem auto 0 auto;
 }
 
+.topBar section{
+  border: 2px solid rgb(194, 194, 194);
+}
+
 
 
 
@@ -202,6 +209,15 @@ span{
 
 .archives{
   margin: 3rem auto;
+}
+
+#archHead{
+  
+}
+
+.archives section{
+  box-shadow: none;
+  border: 2px solid rgb(194, 194, 194);
 }
 
 .archives nav{
