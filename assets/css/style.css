@@ -29,6 +29,9 @@ Images for all of the articles tied to their id
   width: auto;
   padding: 0;
 }
+#octoberTwentyfifth2023{
+  background-image: url(/assets/images/oct26-2023.png);
+}
 #octoberNineteenth2023{
   background-image: url(/assets/images/oct192023.png);
 }
