@@ -224,7 +224,10 @@ span{
 .archives section{
   box-shadow: none;
   border: 2px solid rgb(194, 194, 194);
+  
 }
+
+
 
 .archives nav{
   width: 88%;
@@ -367,7 +370,7 @@ span{
     margin: .7rem;
   }
   .buttonAlt{
-    height: 5rem;
+    height: 7rem;
     
   }
 }
